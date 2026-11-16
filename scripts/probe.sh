@@ -22,6 +22,9 @@ probe github_json       "https://raw.githubusercontent.com/yaroslav2901/OE_OUTAG
 probe asds1562_home     "https://1562.kharkivrada.gov.ua"
 probe oblenergo_gaoinfo "https://www.oblenergo.kharkiv.ua/uk/gaoinfo"
 probe oblenergo_home    "https://www.oblenergo.kharkiv.ua/"
+probe registry_pdf      "https://oblenergo.kharkiv.ua/sites/default/files/pdf/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B8%20%D1%82%D0%B0%20%D1%87%D0%B5%D1%80%D0%B3%D0%B8%2026-27.pdf"
+probe asds1562_http     "http://1562.kharkivrada.gov.ua/"
+probe oblenergo_nowww   "https://oblenergo.kharkiv.ua/uk/gaoinfo"
 
 # Discover candidate API endpoints / scripts referenced by the 1562 and oblenergo pages.
 for n in asds1562_home oblenergo_gaoinfo; do
