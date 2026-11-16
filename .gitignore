@@ -7,3 +7,5 @@ probe-out/
 local.properties
 .gradle/
 build/
+har/
+*.har
