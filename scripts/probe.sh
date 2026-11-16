@@ -25,6 +25,10 @@ probe oblenergo_home    "https://www.oblenergo.kharkiv.ua/"
 probe registry_pdf      "https://oblenergo.kharkiv.ua/sites/default/files/pdf/%D0%90%D0%B4%D1%80%D0%B5%D1%81%D0%B8%20%D1%82%D0%B0%20%D1%87%D0%B5%D1%80%D0%B3%D0%B8%2026-27.pdf"
 probe asds1562_http     "http://1562.kharkivrada.gov.ua/"
 probe oblenergo_nowww   "https://oblenergo.kharkiv.ua/uk/gaoinfo"
+probe pa_villages       "https://pa.oblenergo.kharkiv.ua/frontend/web/index.php/uk/helper/get-villages"
+probe pa_streets        "https://pa.oblenergo.kharkiv.ua/frontend/web/index.php/uk/helper/get-streets?adp_id=122060"
+probe pa_buildings      "https://pa.oblenergo.kharkiv.ua/frontend/web/index.php/uk/helper/get-buildings?adp_id=67700"
+probe pa_form           "https://pa.oblenergo.kharkiv.ua/frontend/web/index.php/uk/portal-application/disconnection-by-address"
 
 # Discover candidate API endpoints / scripts referenced by the 1562 and oblenergo pages.
 for n in asds1562_home oblenergo_gaoinfo; do
