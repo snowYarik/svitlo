@@ -1,0 +1,18 @@
+name: probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe sources
+        run: ./scripts/probe.sh probe-out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: probe-out
+          path: probe-out/
+          retention-days: 14

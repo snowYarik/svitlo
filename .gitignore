@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+out/
+probe-out/
+.DS_Store
+*.local
+local.properties
+.gradle/
+build/
